@@ -1,0 +1,55 @@
+﻿<Properties StartupConfiguration="{9C71984C-BE02-4A08-BFBD-F4B88895C6EC}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="services/IInputService.cs">
+    <Files>
+      <File FileName="constants/InputConstants.cs" Line="1" Column="1" />
+      <File FileName="models/AtmInputMessage.cs" Line="36" Column="23" />
+      <File FileName="constants/CommandConstants.cs" Line="1" Column="1" />
+      <File FileName="constants/PrintConstants.cs" Line="1" Column="1" />
+      <File FileName="services/IDisplayService.cs" Line="1" Column="1" />
+      <File FileName="constants/AtmConstants.cs" Line="1" Column="1" />
+      <File FileName="models/Atm.cs" Line="16" Column="9" />
+      <File FileName="services/ConsoleInputService.cs" Line="180" Column="2" />
+      <File FileName="controllers/AtmController.cs" Line="209" Column="76" />
+      <File FileName="Program.cs" Line="17" Column="6" />
+      <File FileName="services/ConsoleDisplayService.cs" Line="146" Column="9" />
+      <File FileName="services/IInputService.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="AtmDemo" expanded="True">
+            <Node name="AtmDemo" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="SdkDependencies" expanded="True" />
+              </Node>
+              <Node name="constants" expanded="True" />
+              <Node name="controllers" expanded="True" />
+              <Node name="models" expanded="True" />
+              <Node name="services" expanded="True">
+                <Node name="IInputService.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.AtmDemo PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches>
+    <Watch file="../../../controllers/AtmController.cs" line="95" offsetX="468" offsetY="1185" expression="denomination" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="288" offsetX="-1" offsetY="-1" expression="amount" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="273" offsetX="-1" offsetY="-1" expression="denomination" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="306" offsetX="-1" offsetY="-1" expression="withdrawalValues" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="306" offsetX="-1" offsetY="-1" expression="withdrawalValues" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="306" offsetX="-1" offsetY="-1" expression="withdrawalValues.[0]" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="272" offsetX="-1" offsetY="-1" expression="remainder" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="272" offsetX="-1" offsetY="-1" expression="remainder" liveUpdate="False" />
+    <Watch file="../../../controllers/AtmController.cs" line="284" offsetX="-1" offsetY="-1" expression="remainder" liveUpdate="False" />
+  </MonoDevelop.Ide.DebuggingService.PinnedWatches>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <AuthorInfo Name="Daniel Byczynski" Email="DByczynski18@gmail.com" Copyright="" Company="DBYCZ" Trademark="" />
+</Properties>

@@ -1,0 +1,12 @@
+/Users/danielbyczynski/Projects/ATM/AtmDemo/obj/Debug/netcoreapp2.1/AtmDemo.csproj.CoreCompileInputs.cache
+/Users/danielbyczynski/Projects/ATM/AtmDemo/obj/Debug/netcoreapp2.1/AtmDemo.AssemblyInfoInputs.cache
+/Users/danielbyczynski/Projects/ATM/AtmDemo/obj/Debug/netcoreapp2.1/AtmDemo.AssemblyInfo.cs
+/Users/danielbyczynski/Projects/ATM/AtmDemo/bin/Debug/netcoreapp2.1/AtmDemo.xml
+/Users/danielbyczynski/Projects/ATM/AtmDemo/bin/Debug/netcoreapp2.1/AtmDemo.deps.json
+/Users/danielbyczynski/Projects/ATM/AtmDemo/bin/Debug/netcoreapp2.1/AtmDemo.runtimeconfig.json
+/Users/danielbyczynski/Projects/ATM/AtmDemo/bin/Debug/netcoreapp2.1/AtmDemo.runtimeconfig.dev.json
+/Users/danielbyczynski/Projects/ATM/AtmDemo/bin/Debug/netcoreapp2.1/AtmDemo.dll
+/Users/danielbyczynski/Projects/ATM/AtmDemo/bin/Debug/netcoreapp2.1/AtmDemo.pdb
+/Users/danielbyczynski/Projects/ATM/AtmDemo/obj/Debug/netcoreapp2.1/AtmDemo.dll
+/Users/danielbyczynski/Projects/ATM/AtmDemo/obj/Debug/netcoreapp2.1/AtmDemo.pdb
+/Users/danielbyczynski/Projects/ATM/AtmDemo/obj/Debug/netcoreapp2.1/AtmDemo.csprojAssemblyReference.cache

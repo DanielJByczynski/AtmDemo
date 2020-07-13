@@ -1,0 +1,737 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AtmDemo</name>
+    </assembly>
+    <members>
+        <member name="T:AtmDemo.constants.AtmConstants">
+            <summary>
+            The <c>AtmConstants</c> class defines various app setting constants
+            for the system.
+            </summary>
+            <seealso cref="T:AtmDemo.constants.CommandConstants"/>
+            <seealso cref="T:AtmDemo.constants.PrintConstants"/>
+            <seealso cref="T:AtmDemo.constants.InputConstants"/>
+        </member>
+        <member name="F:AtmDemo.constants.AtmConstants.MAX_INPUT_ARGUMENTS">
+            <summary>
+            <c>MAX_INPUT_ARGUMENTS</c> constant defines the maximum number of argument
+            inputs accepted by the system. This does not include the Command input.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.MIN_INPUT_ARGUMENTS"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.VALUE_INDEX"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.COUNT_INDEX"/>
+        </member>
+        <member name="F:AtmDemo.constants.AtmConstants.MIN_INPUT_ARGUMENTS">
+            <summary>
+            <c>MIN_INPUT_ARGUMENTS</c> constant defines the minimum number of
+            argument
+            inputs accepted by the system. This does not include the Command input.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.MAX_INPUT_ARGUMENTS"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.VALUE_INDEX"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.COUNT_INDEX"/>
+        </member>
+        <member name="F:AtmDemo.constants.AtmConstants.VALUE_INDEX">
+            <summary>
+            The <c>VALUE_INDEX</c> constant defines the denomination value column
+            in the [Denomination, Inventory] <c>Atm</c> <c>Vault</c> array.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.MAX_INPUT_ARGUMENTS"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.MIN_INPUT_ARGUMENTS"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.COUNT_INDEX"/>
+        </member>
+        <member name="F:AtmDemo.constants.AtmConstants.COUNT_INDEX">
+            <summary>
+            The <c>COUNT_INDEX</c> constant is used to define the inventory count
+            column in the [Denomination, Inventory] <c>Atm</c> <c>Vault</c> array.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.MAX_INPUT_ARGUMENTS"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.MIN_INPUT_ARGUMENTS"/>
+            <seealso cref="F:AtmDemo.constants.AtmConstants.VALUE_INDEX"/>
+        </member>
+        <member name="T:AtmDemo.constants.CommandConstants">
+            <summary>
+            The <c>CommandConstants</c> class contains the program's input char values.
+            </summary>
+            <seealso cref="T:AtmDemo.constants.AtmConstants"/>
+            <seealso cref="T:AtmDemo.constants.PrintConstants"/>
+            <seealso cref="T:AtmDemo.constants.InputConstants"/>
+        </member>
+        <member name="F:AtmDemo.constants.CommandConstants.RESTOCK">
+            <summary>
+            The <c>RESTOCK</c> parameter defines the char input value for the
+            Restocking functionality.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.WITHDRAW"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.INVENTORY"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.QUIT"/>
+            <seealso cref="T:AtmDemo.constants.CommandConstants.COMMAND_ENUM"/>
+        </member>
+        <member name="F:AtmDemo.constants.CommandConstants.WITHDRAW">
+            <summary>
+            The <c>WITHDRAW</c> parameter defines the char input value for the
+            Withdrawal functionality.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.RESTOCK"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.INVENTORY"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.QUIT"/>
+            <seealso cref="T:AtmDemo.constants.CommandConstants.COMMAND_ENUM"/>
+        </member>
+        <member name="F:AtmDemo.constants.CommandConstants.INVENTORY">
+            <summary>
+            The <c>INVENTORY</c> parameter defines the char input value
+            for the Inventory functionality.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.RESTOCK"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.WITHDRAW"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.QUIT"/>
+            <seealso cref="T:AtmDemo.constants.CommandConstants.COMMAND_ENUM"/>
+        </member>
+        <member name="F:AtmDemo.constants.CommandConstants.QUIT">
+            <summary>
+            The <c>QUIT</c> parameter defines the char input value
+            for the Quit functionality.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.RESTOCK"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.INVENTORY"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.WITHDRAW"/>
+            <seealso cref="T:AtmDemo.constants.CommandConstants.COMMAND_ENUM"/>
+        </member>
+        <member name="T:AtmDemo.constants.CommandConstants.COMMAND_ENUM">
+            <summary>
+            The <c>COMMAND_ENUM</c> parameter defines the input Command enum values.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.RESTOCK"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.INVENTORY"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.WITHDRAW"/>
+            <seealso cref="F:AtmDemo.constants.CommandConstants.QUIT"/>
+        </member>
+        <member name="T:AtmDemo.constants.InputConstants">
+            <summary>
+            The <c>InputConstants</c> class defines the input list argument index.
+            </summary>
+            <seealso cref="T:AtmDemo.constants.AtmConstants"/>
+            <seealso cref="T:AtmDemo.constants.PrintConstants"/>
+            <seealso cref="T:AtmDemo.constants.PrintConstants"/>
+        </member>
+        <member name="F:AtmDemo.constants.InputConstants.COMMAND">
+            <summary>
+            The <c>COMMAND</c> constant defines index for the Command input argument.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.InputConstants.AMOUNT"/>
+        </member>
+        <member name="F:AtmDemo.constants.InputConstants.AMOUNT">
+            <summary>
+            The <c>AMOUNT</c> constant defines index for the AMOUNT input arguments.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.InputConstants.COMMAND"/>
+        </member>
+        <member name="T:AtmDemo.constants.PrintConstants">
+            <summary>
+            The <c>PrintConstants</c> method contains the program's output strings.
+            </summary>
+            <seealso cref="T:AtmDemo.constants.AtmConstants"/>
+            <seealso cref="T:AtmDemo.constants.CommandConstants"/>
+            <seealso cref="T:AtmDemo.constants.InputConstants"/>
+        </member>
+        <member name="F:AtmDemo.constants.PrintConstants.CURRENCY_CHAR">
+            <summary>
+            The <c>CURRENCY_CHAR</c> constant defines the currency symbol prefix.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_COMMAND"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_ARGUMENT"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.MACHINE_BALANCE"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.HYPHEN_SPACING"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_SUCCESS"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_FAILURE"/>
+        </member>
+        <member name="F:AtmDemo.constants.PrintConstants.INVALID_COMMAND">
+            <summary>
+            The <c>INVALID_COMMAND</c> constant defines the invalid command
+            output message.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.CURRENCY_CHAR"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_ARGUMENT"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.MACHINE_BALANCE"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.HYPHEN_SPACING"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_SUCCESS"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_FAILURE"/>
+        </member>
+        <member name="F:AtmDemo.constants.PrintConstants.INVALID_ARGUMENT">
+            <summary>
+            The <c>INVALID_ARGUMENT</c> constant defines the invalid argument
+            output message.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.CURRENCY_CHAR"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_COMMAND"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.MACHINE_BALANCE"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.HYPHEN_SPACING"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_SUCCESS"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_FAILURE"/>
+        </member>
+        <member name="F:AtmDemo.constants.PrintConstants.MACHINE_BALANCE">
+            <summary>
+            The <c>MACHINE_BALANCE</c> constant defines the machine balance
+            header message.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.CURRENCY_CHAR"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_COMMAND"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_ARGUMENT"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.HYPHEN_SPACING"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_SUCCESS"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_FAILURE"/>
+        </member>
+        <member name="F:AtmDemo.constants.PrintConstants.HYPHEN_SPACING">
+            <summary>
+            The <c>HYPHEN_SPACING</c> constant defines the inventory
+            Denomination-Inventory divider.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.CURRENCY_CHAR"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_COMMAND"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_ARGUMENT"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.MACHINE_BALANCE"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_SUCCESS"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_FAILURE"/>
+        </member>
+        <member name="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_SUCCESS">
+            <summary>
+            The <c>WITHDRAWAL_SUCCESS</c> constant defines the withdrawal
+            success message.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.CURRENCY_CHAR"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_COMMAND"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_ARGUMENT"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.MACHINE_BALANCE"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.HYPHEN_SPACING"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_FAILURE"/>
+        </member>
+        <member name="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_FAILURE">
+            <summary>
+            The <c>WITHDRAWAL_FAILURE</c> constant defines the withdrawal
+            failure message.
+            </summary>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.CURRENCY_CHAR"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_COMMAND"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.INVALID_ARGUMENT"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.MACHINE_BALANCE"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.HYPHEN_SPACING"/>
+            <seealso cref="F:AtmDemo.constants.PrintConstants.WITHDRAWAL_SUCCESS"/>
+        </member>
+        <member name="T:AtmDemo.services.AtmController">
+            <summary>
+            <c>AtmController</c>The AtmController class contains 
+            all methods for controlling ATM operation.
+            </summary>
+        </member>
+        <member name="M:AtmDemo.services.AtmController.#ctor(AtmDemo.services.IDisplayService,AtmDemo.services.IInputService)">
+            <summary>
+            Initializes a new instance of the
+            <see cref="M:AtmDemo.services.AtmController.#ctor(AtmDemo.services.IDisplayService,AtmDemo.services.IInputService)"/> class.
+            </summary>
+        </member>
+        <member name="M:AtmDemo.services.AtmController.StartAtm">
+            <summary>
+            The <c>StartAtm</c> method instantiates the Atm object and runs
+            the InputMessage Command cycle.
+            <example>
+            Example:
+            <code>
+                atmController.StartAtm();
+            </code>
+            starts the Atm.
+            </example>
+            </summary>
+        </member>
+        <member name="M:AtmDemo.services.AtmController.Restock(AtmDemo.Atm@)">
+            <summary>
+            The <c>Restock</c> method resets the Atm object,
+            displays the machine balance, then outputs the atm object. 
+            <example>
+            Example:
+            <code>
+                Restock(atm);
+            </code>
+            results in the Atm object resetting and the machine
+            balance displaying.
+            </example>
+            </summary>
+            <param name="atm"><c>atm</c> is the Atm object to be reset.</param>
+            <seealso cref="M:AtmDemo.services.AtmController.Inventory(AtmDemo.Atm,System.Collections.Generic.List{System.Int32})"/>
+            <seealso cref="M:AtmDemo.services.AtmController.Withdraw(AtmDemo.Atm,System.Int32)"/>
+        </member>
+        <member name="M:AtmDemo.services.AtmController.Inventory(AtmDemo.Atm,System.Collections.Generic.List{System.Int32})">
+            <summary>
+            The <c>Inventory</c> method accepts an Atm object and a list 
+            of denominations and validates them. If valid, a distinct list of 
+            the requested inventories is displayed.
+            <example>
+            Example:
+            <code>
+                Inventory(atm, denominations);
+            </code>
+            results in the output of inventory information for the provided
+            list of denominations.
+            </example>
+            </summary>
+            <param name="atm"><c>atm</c> is the Atm object.</param>
+            <param name="inputs"><c>inputs</c> is a list of inventory requests.</param>
+            <seealso cref="M:AtmDemo.services.AtmController.Restock(AtmDemo.Atm@)"/>
+            <seealso cref="M:AtmDemo.services.AtmController.Withdraw(AtmDemo.Atm,System.Int32)"/>
+        </member>
+        <member name="M:AtmDemo.services.AtmController.Withdraw(AtmDemo.Atm,System.Int32)">
+            <summary>
+                    The <c>Withdraw</c> method returns the optimal way to remove the
+                requested amount from the Atm vault using the least number of bills.
+                The machine balance and withdrawal amount are displayed if the 
+                withdrawal was a success, an error is shown on failure.
+                <example>
+                    Example: 
+                    <code>
+                        atm = Withdraw(atm, withdrawalAmount);
+                    </code>
+                    returns an atm object which has been mo
+                </example>
+            </summary>
+            <param name="atm"><c>atm</c> is the Atm object.</param>
+            <param name="amount"><c>amount</c> is the amount to be withdrawn.</param>
+            <returns>Atm object.</returns>
+            <seealso cref="M:AtmDemo.services.AtmController.Restock(AtmDemo.Atm@)"/>
+            <seealso cref="M:AtmDemo.services.AtmController.Inventory(AtmDemo.Atm,System.Collections.Generic.List{System.Int32})"/>
+            <seealso cref="M:AtmDemo.services.AtmController.Possibilities(System.Int32[],System.Int32[],System.Int32[],System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:AtmDemo.services.AtmController.Possibilities(System.Int32[],System.Int32[],System.Int32[],System.Int32,System.Int32)">
+            <summary>
+            Possiblities takes an input amount, and compiles a list of change possibilities
+            sorted by denomination from highest value to lowest.
+            </summary>
+            <param name="vaultKeys">Array of denomination values.</param>
+            <param name="vaultValues">Array of inventory values.</param>
+            <param name="possibility"></param>
+            <param name="amount">Change amount desired.</param>
+            <param name="index">index</param>
+            <returns>Void.</returns>
+            <seealso cref="M:AtmDemo.services.AtmController.Withdraw(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.AtmController.GetPossibilityTotal(System.Int32[],System.Int32[])"/>
+        </member>
+        <member name="M:AtmDemo.services.AtmController.GetPossibilityTotal(System.Int32[],System.Int32[])">
+            <summary>
+            Calculates the total of the possibility using the vaultKey array.
+            </summary>
+            <param name="vaultKeys">VaultKey int array.</param>
+            <param name="possibility">Possibility values int array.</param>
+            <returns>Total amount of the possibliity <c>int</c></returns>
+            <seealso cref="M:AtmDemo.services.AtmController.Possibilities(System.Int32[],System.Int32[],System.Int32[],System.Int32,System.Int32)"/>
+        </member>
+        <member name="T:AtmDemo.services.ConsoleDisplayService">
+            <summary>
+            The <c>ConsoleDisplayService</c> class.
+            Contains all methods for displaying information to the console.
+            <list type="bullet">
+                <item>
+                    <term>DisplayBalanceLine</term>
+                    <description>Prints a balance line to the console.</description>
+                </item>
+                <item>
+                    <term>DisplayMachineBalance</term>
+                    <description>Prints the machine balance to the console.</description>
+                </item>
+                <item>
+                    <term>DisplayWithdrawalSuccess</term>
+                    <description>Prints Withdrawal Success message and machine balance to console.</description>
+                </item>
+                <item>
+                    <term>DisplayWithdrawalFailure</term>
+                    <description>Prints Withdrawal Failure message to console.</description>
+                </item>
+                <item>
+                    <term>DisplayInvalidCommandMessage</term>
+                    <description>Prints Invalid Command message to console.</description>
+                </item>
+                <item>
+                    <term>DisplayInvalidArgumentMessage</term>
+                    <description>Prints Invalid Argument message to console.</description>
+                </item>
+            </list>
+            </summary>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.DisplayBalanceLine(System.Int32,System.Int32)">
+            <summary>
+                The <c>DisplayBalanceLine</c> method displays the balance line.
+            </summary>
+            <param name="denomination">Denomination to be returned.</param>
+            <param name="value">
+                Inventory value of the denomination in the Atm.
+            </param>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalance(AtmDemo.Atm)">
+            <summary>
+                The <c>DisplayMachineBalance</c> method displays the machine balance.
+            </summary>
+            <param name="atm">Atm object to have inventory displayed.</param>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)">
+            <summary>
+                The <c>DisplayWithdrawalSuccess</c> method displays the
+                Withdrawal Success message.
+            </summary>
+            <param name="atm">Atm object to have inventory displayed.</param>
+            <param name="amount">Amount withdrawn from the Atm.</param>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalFailure">
+            <summary>
+                The <c>DisplayWithdrawalFailure</c> method displays the
+                Withdrawal Failure message.
+            </summary>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidCommandMessage">
+            <summary>
+                The <c>DisplayInvalidCommandMessage</c> method displays the
+                Invalid Command message.
+            </summary>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidArgumentMessage">
+            <summary>
+                The private <c>DisplayInvalidArgumentMessage</c> method displays the
+                Invalid Argument message.
+            </summary>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayInvalidCommandMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalanceHeader">
+            <summary>
+            The <c>DisplayMachineBalanceHeader</c> method displays the Machine Balance Header.
+            </summary>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.Print(System.String)"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleDisplayService.Print(System.String)">
+            <summary>
+            The private <c>Print</c> method provides a layer of abstraction
+             between the data and the display.
+            </summary>
+            <param name="output">The string to be displayed.</param>
+            <seealso cref="M:AtmDemo.services.ConsoleDisplayService.DisplayMachineBalanceHeader"/>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleInputService.GetInputMessage">
+            <summary>
+               The GetInputMessage method prompts the user for input and
+               returns an AtmInputMessage object.
+               <example>
+               Example:
+               <code>
+                  var inputMessage = _inputService.GetInputMessage();
+               </code>
+               returns an AtmInputMessage object.
+               </example>
+            </summary>
+            <returns>Returns an AtmInputMessage object.</returns>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleInputService.BuildInputMessage(AtmDemo.AtmInputMessage,System.Collections.Generic.List{System.String})">
+            <summary>
+            Builds the input message Command and argument(s).
+            </summary>
+            <param name="inputMessage"></param>
+            <param name="inputStrings"></param>
+            <returns>AtmInputMessage object.</returns>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleInputService.GetCommand(System.Collections.Generic.List{System.String})">
+            <summary>
+            Gets the Command int for the inputMessage.
+            </summary>
+            <param name="inputStrings"></param>
+            <returns>Command Int.</returns>
+        </member>
+        <member name="M:AtmDemo.services.ConsoleInputService.GetArguments(AtmDemo.AtmInputMessage,System.Collections.Generic.List{System.String})">
+            <summary>
+            Gets Withdrawal or Inventory argument(s) depending on Command.
+            </summary>
+            <param name="inputMessage"></param>
+            <param name="inputStrings"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AtmDemo.services.IDisplayService.DisplayBalanceLine(System.Int32,System.Int32)">
+            <summary>
+                The <c>DisplayBalanceLine</c> method displays the balance line.
+            </summary>
+            <param name="denomination">Denomination to be returned.</param>
+            <param name="value">
+                Inventory value of the denomination in the Atm.
+            </param>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.IDisplayService.DisplayMachineBalance(AtmDemo.Atm)">
+            <summary>
+                The <c>DisplayMachineBalance</c> method displays the machine balance.
+            </summary>
+            <param name="atm">Atm object to have inventory displayed.</param>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.IDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)">
+            <summary>
+                The <c>DisplayWithdrawalSuccess</c> method displays the
+                Withdrawal Success message.
+            </summary>
+            <param name="atm">Atm object to have inventory displayed.</param>
+            <param name="amount">Amount withdrawn from the Atm.</param>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.IDisplayService.DisplayWithdrawalFailure">
+            <summary>
+                The <c>DisplayWithdrawalFailure</c> method displays the
+                Withdrawal Failure message.
+            </summary>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidCommandMessage"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.IDisplayService.DisplayInvalidCommandMessage">
+            <summary>
+                The <c>DisplayInvalidCommandMessage</c> method displays the
+                Invalid Command message.
+            </summary>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidArgumentMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.IDisplayService.DisplayInvalidArgumentMessage">
+            <summary>
+                The private <c>DisplayInvalidArgumentMessage</c> method displays the
+                Invalid Argument message.
+            </summary>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayBalanceLine(System.Int32,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayMachineBalance(AtmDemo.Atm)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalSuccess(AtmDemo.Atm,System.Int32)"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayWithdrawalFailure"/>
+            <seealso cref="M:AtmDemo.services.IDisplayService.DisplayInvalidCommandMessage"/>
+        </member>
+        <member name="M:AtmDemo.services.IInputService.GetInputMessage">
+            <summary>
+               The GetInputMessage method prompts the user for input and
+               returns an AtmInputMessage object.
+               <example>
+               Example:
+               <code>
+                  var inputMessage = _inputService.GetInputMessage();
+               </code>
+               returns an AtmInputMessage object.
+               </example>
+            </summary>
+            <returns>Returns an AtmInputMessage object.</returns>
+        </member>
+        <member name="T:AtmDemo.Atm">
+            <summary>
+            The <c>Atm</c> class models an Atm machine.
+            </summary>
+        </member>
+        <member name="M:AtmDemo.Atm.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="M:AtmDemo.Atm.#ctor"/> class.
+            </summary>
+        </member>
+        <member name="P:AtmDemo.Atm.Vault">
+            <summary>
+                The <c>Vault</c> property controls the Atm object's
+                [denomination, inventory] Dictionary.
+                <example>
+                Example:
+                <code>
+                    atm.Vault = new Dictionary int, int { ... };
+                </code>
+                instantiates the Vault.
+            </example>
+            </summary>
+            <seealso cref="P:AtmDemo.Atm.Denominations"/>
+            <seealso cref="P:AtmDemo.Atm.Inventory"/>
+            <seealso cref="M:AtmDemo.Atm.GetValue(System.Int32)"/>
+            <seealso cref="M:AtmDemo.Atm.SetValue(System.Int32,System.Int32)"/>
+            <seealso cref="P:AtmDemo.Atm.DenominationCount"/>
+        </member>
+        <member name="P:AtmDemo.Atm.Denominations">
+            <summary>
+               The <c>Denominations</c> method returns the list of denominations
+               in the Vault.
+            <example>
+            Example:
+            <code>
+                var denominations = atm.Denominations();
+            </code>
+            </example>
+            </summary>
+            <seealso cref="P:AtmDemo.Atm.Vault"/>
+            <seealso cref="P:AtmDemo.Atm.Inventory"/>
+            <seealso cref="M:AtmDemo.Atm.GetValue(System.Int32)"/>
+            <seealso cref="M:AtmDemo.Atm.SetValue(System.Int32,System.Int32)"/>
+            <seealso cref="P:AtmDemo.Atm.DenominationCount"/>
+        </member>
+        <member name="P:AtmDemo.Atm.Inventory">
+            <summary>
+               The <c>Inventory</c> method returns the list of inventory values
+               in the Vault.
+            <example>
+            Example:
+            <code>
+                var inventoryValues = atm.inventory();
+            </code>
+            </example>
+            </summary>
+            <seealso cref="P:AtmDemo.Atm.Vault"/>
+            <seealso cref="P:AtmDemo.Atm.Denominations"/>
+            <seealso cref="M:AtmDemo.Atm.GetValue(System.Int32)"/>
+            <seealso cref="M:AtmDemo.Atm.SetValue(System.Int32,System.Int32)"/>
+            <seealso cref="P:AtmDemo.Atm.DenominationCount"/>
+        </member>
+        <member name="M:AtmDemo.Atm.GetValue(System.Int32)">
+            <summary>
+                The <c>GetValue</c> method returns the inventory value
+                of the given denomination key.
+                <example>
+                    Example:
+                    <code>
+                        var inventoryValue = atm.GetValue(100);
+                    </code>
+                </example>
+            </summary>
+            <seealso cref="P:AtmDemo.Atm.Vault"/>
+            <seealso cref="P:AtmDemo.Atm.Denominations"/>
+            <seealso cref="P:AtmDemo.Atm.Inventory"/>
+            <seealso cref="M:AtmDemo.Atm.SetValue(System.Int32,System.Int32)"/>
+            <seealso cref="P:AtmDemo.Atm.DenominationCount"/>
+        </member>
+        <member name="M:AtmDemo.Atm.SetValue(System.Int32,System.Int32)">
+            <summary>
+                The <c>SetValue(int key, int value)</c> method sets the
+                inventory value of the given denomination key to the given value.
+                <example>
+                    Example:
+                    <code>
+                        atm.SetValue(100, 10);
+                    </code>
+                </example>
+            </summary>
+            <seealso cref="P:AtmDemo.Atm.Vault"/>
+            <seealso cref="P:AtmDemo.Atm.Denominations"/>
+            <seealso cref="P:AtmDemo.Atm.Inventory"/>
+            <seealso cref="M:AtmDemo.Atm.GetValue(System.Int32)"/>
+            <seealso cref="P:AtmDemo.Atm.DenominationCount"/>
+        </member>
+        <member name="P:AtmDemo.Atm.DenominationCount">
+            <summary>
+                The <c>SetValue(int key, int value)</c> method sets the
+                inventory value of the given denomination key to the given value.
+                <example>
+                    Example:
+                    <code>
+                        var denominationCount = atm.DenominationCount;
+                    </code>
+                </example>
+            </summary>
+            <seealso cref="P:AtmDemo.Atm.Vault"/>
+            <seealso cref="P:AtmDemo.Atm.Denominations"/>
+            <seealso cref="P:AtmDemo.Atm.Inventory"/>
+            <seealso cref="M:AtmDemo.Atm.GetValue(System.Int32)"/>
+            <seealso cref="M:AtmDemo.Atm.SetValue(System.Int32,System.Int32)"/>
+        </member>
+        <member name="M:AtmDemo.AtmInputMessage.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="M:AtmDemo.AtmInputMessage.#ctor"/> class.
+            </summary>
+        </member>
+        <member name="P:AtmDemo.AtmInputMessage.Command">
+            <summary>
+            Command int controls program operations.
+            </summary>
+        </member>
+        <member name="P:AtmDemo.AtmInputMessage.WithdrawalAmount">
+            <summary>
+            WithdrawalAmount int stores the amount to be withdrawn from the atm.
+            </summary>
+        </member>
+        <member name="P:AtmDemo.AtmInputMessage.CountRequests">
+            <summary>
+            Count Requests holds a number of inventory requests.
+            </summary>
+        </member>
+        <member name="T:AtmDemo.Program">
+            <summary>
+            The main <c>Program</c> class.
+            Instantiates all dependencies and runs the program.
+            </summary>
+            <remarks>
+            <para>Author: Daniel J. Byczynski - 2019</para>
+            <para>
+                  You are to write a cash machine (ATM) application. The cash machine is pre-stocked with the
+                following denominations:
+                    • $100 - 10 Bills
+                    • $50 - 10 Bills
+                    • $20 - 10 Bills
+                    • $10 - 10 Bills
+                    • $5 - 10 Bills
+                    • $1 - 10 Bills
+            </para>
+            <para>
+                  Your application should take input from the standard input stream and support the following
+                commands:
+                    • R - Restocks the cash machine to the original pre-stock levels defined above
+                    • W&lt;dollar amount&gt; - Withdraws that amount from the cash machine(e.g. &quot; W $145&quot;)
+                    • I&lt;denominations&gt; - Displays the number of bills in that denomination present in the cash machine(e.g.I $20 $10 $1)
+                    • Q - Quits the application
+            </para>
+            <para>
+                  The withdrawals from the cash machine should dispense cash in the most efficient manner
+                possible, with the least amount of bills.After a withdrawal, the program should display success
+                or failure and the remaining balance in the cash machine (sample output below). For an
+                inquiry, the program should display the number of bills in the denominations specified(sample
+                output below). After a restock, the program should display the balance in the cash machine
+                (same as after a withdrawal). If the input is not understood, &quot;Invalid Command&quot; should be
+                displayed.No additional messages, prompts or errors should be displayed.
+            </para>
+            </remarks>
+        </member>
+    </members>
+</doc>
